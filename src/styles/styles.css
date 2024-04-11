@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4e6bff, #71a9f7, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* White text color */
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-style: unset;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #EFF2EF;
+    outline: none;
+
+    &:focus{
+        color: gold;
+    }
+}
+
+input[type="text"]:focus{
+    border-style: none;
+}
+
+.weather-card {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+    border-radius: 10px;
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.location h2, .temperature h3, .description h3 {
+    margin: 0;
+    color: #fff; /* White text color */
+}
+
+.location p, .temperature p, .description p {
+    margin: 10px 0 0;
+    color: #fff; /* White text color */
+}
+
+.iconos{
+    width: 80px;
+}
